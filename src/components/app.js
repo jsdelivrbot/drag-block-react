@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
+import PrevList from '../containers/PrevList';
+import DetailList from '../containers/DetailList';
 
-export default class App extends Component {
-  render() {
-    return (
-      <div>React simple starter</div>
-    );
-  }
+const App = () => {
+	return (
+		<div className="clearfix">
+      <PrevList />
+      <DetailList />
+    </div>
+	)
 }
+
+export default App;
