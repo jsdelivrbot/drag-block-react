@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Simple starter package for Redux with React and Babel support",
   "main": "index.js",
-  "repository": "git@github.com:IGoRFonin/ReduxSimpleStarter.git",
+  "repository": "git@github.com:IGoRFonin/drag-block-react.git",
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --inline",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
