@@ -8,7 +8,11 @@ class DetailList extends Component {
   	return(
   		<div className="right">
         <div className="blocks-content">
-          { blocks.map(block => <DetailBlock block={block} key={block.id} /> )}
+          { blocks.map(block => (
+          <DetailBlock 
+            block={block} 
+            key={block.id} />
+          ) )}
         </div>
     </div>
   	)

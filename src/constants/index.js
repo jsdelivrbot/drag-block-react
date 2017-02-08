@@ -1,0 +1,2 @@
+export const BLOCK_DRAG_START = 'BLOCK_DRAG_START';
+export const BLOCK_DRAG_END = 'BLOCK_DRAG_END';

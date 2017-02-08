@@ -2,29 +2,37 @@ const initialState =
 	{ blocks: [
 		{
 			id:1,
-			html: ""
+			html: "",
+			isDrag: false
 		},{
 			id:2,
-			html: ""
+			html: "",
+			isDrag: false
 		},
 		{
 			id:3,
-			html: ""
+			html: "",
+			isDrag: false
 		},{
 			id:4,
-			html: ""
+			html: "",
+			isDrag: false
 		},{
 			id:5,
-			html: ""
+			html: "",
+			isDrag: false
 		},{
 			id:6,
-			html: ""
+			html: "",
+			isDrag: false
 		},{
 			id:7,
-			html: ""
+			html: "",
+			isDrag: false
 		},{
 			id:8,
-			html: ""
+			html: "",
+			isDrag: false
 		}
 	]}
 
