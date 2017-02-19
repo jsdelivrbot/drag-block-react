@@ -3,11 +3,14 @@ import { connect } from 'react-redux';
 import PrevBlock from '../components/PrevBlock';
 import Logo from '../components/Logo';
 import dispatchProps from '../actions';
-import { BLOCK_DRAG_START } from '../constants';
 
 class PrevList extends Component {
   render() {
-    const { blocks, onDragStart, onDragEnd } = this.props;
+    const { 
+      blocks, 
+      onDragStart, 
+      onDrag,
+      onDragEnd } = this.props;
     return(
         <div className="left">
             <Logo />
@@ -16,8 +19,15 @@ class PrevList extends Component {
                 <PrevBlock 
                     key={block.id} 
                     block={block} 
-                    onDragStart={() =>  onDragStart(block.id)}
-                    onDragEnd={() =>  onDragEnd(block.id)}
+                    onDragStart={() => onDragStart(block.id)}
+                    onDrag={(e) => {
+                      onDrag({
+                        id:block.id,
+                        clientY:e.clientY,
+                        width: e.target.offsetWidth
+                      })
+                    }}
+                    onDragEnd={() => onDragEnd(block.id)}
                     />
                 ) )}
             </ul>

@@ -120,3 +120,12 @@
   left: 20px;
   top: 50px;
 }
+
+.hidden-opacity {
+  opacity: 0;
+}
+
+.drag_element {
+  position: absolute;
+  left: 15px;
+}

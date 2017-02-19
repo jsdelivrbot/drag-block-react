@@ -1,4 +1,8 @@
-import { BLOCK_DRAG_START, BLOCK_DRAG_END } from '../constants';
+import { 
+    BLOCK_DRAG_START, 
+    BLOCK_DRAG_END,
+    BLOCK_DRAG
+} from '../constants';
 
 const dispatchProps = (dispatch) => {
 	return {
@@ -7,6 +11,15 @@ const dispatchProps = (dispatch) => {
             dispatch({
                 type: BLOCK_DRAG_START,
                 id
+            })
+        },
+        onDrag: ({id, clientY, width}) => {
+            
+            dispatch({
+                type: BLOCK_DRAG,
+                id,
+                clientY,
+                width
             })
         },
         onDragEnd: (id) => {
